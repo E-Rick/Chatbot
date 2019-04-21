@@ -1,0 +1,42 @@
+Program Structure for project2:
+	
+User.rb
+	Subject class in observer pattern that implements ruby observable module
+
+main.rb
+	Contains the provided main driver code
+
+Chatbot.rb
+	Abstract Template Method Class
+	The chat class contains a template method (enterUser(user)) along with necessary abstract methods to read in the dictionary file, select a response strategy, and update when 		notified by the Observable subject
+
+
+DepressedChatbot.rb
+	Implements Chat and Observer Pattern
+	reads in sadchatter.txt
+
+HappyChatbot.rb
+	Implements Chat and Observer Pattern
+	reads in happychatter.txt
+
+AngryChatbot.rb
+	Implements Chat and Observer Pattern
+	reads in angrychatter.txt
+
+Response.rb
+	This is just an interface
+
+QuestionStrategy.rb
+	Implements Response
+	Contains necessary method to choose correct bot response deflection in the event of no partial match and a question asked by user
+
+MatchStrategy.rb
+	Implements Response
+	Contains necessary method to choose correct bot response in the event of a partial match on user input string
+
+ChangeSubjectStrategy.rb
+	Implements Response
+	Contains necessary method to choose correct bot response in the event of no partial match on user input string
+
+	
+	
