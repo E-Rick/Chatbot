@@ -1,4 +1,4 @@
-Program Structure for project2:
+Program Structure for ChatBot:
 	
 User.rb
 	Subject class in observer pattern that implements ruby observable module
